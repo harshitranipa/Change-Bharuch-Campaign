@@ -1,6 +1,7 @@
-import 'package:CBC/screens/login.dart';
 import 'package:flutter/material.dart';
 import 'screens/homepage.dart';
+import 'package:CBC/screens/login.dart';
+import 'package:CBC/screens/register.dart';
 
 void main() {
   runApp(MyApp());
@@ -60,7 +61,7 @@ class CbcWall extends StatelessWidget{
                     title: Text('Join as Volunteer'),
                     onTap: () {
                       Navigator.pop(context);
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => Login()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => Register()));
                     },
                   ),
                   ListTile(
@@ -68,6 +69,14 @@ class CbcWall extends StatelessWidget{
                     title: Text('Login'),
                     onTap: () {
                      Navigator.pop(context);
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => Login()));
+                    },
+                  ),
+                  ListTile(
+                    leading: Icon(Icons.notifications),
+                    title: Text('Events / Upcoming Camps'),
+                    onTap: () {
+                      Navigator.pop(context);
                       Navigator.push(context, MaterialPageRoute(builder: (context) => Login()));
                     },
                   ),
